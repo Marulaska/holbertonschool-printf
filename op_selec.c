@@ -24,6 +24,7 @@ int op_selec(char format, va_list arg)
 	{
 		if (*(ops[j].op) ==  format)
 			return (ops[j].f(arg));
+		j++;
 	}
 	return (0);
 }

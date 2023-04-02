@@ -3,6 +3,23 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
+
+/**
+ * _printnull - print char
+ * Return: Always 6
+ */
+
+int _printnull(void)
+{
+	_putchar('(');
+	_putchar('n');
+	_putchar('u');
+	_putchar('l');
+	_putchar('l');
+	_putchar(')');
+	return (6);
+}
+
 /**
  * _printc - print char
  * @arg: input char
@@ -14,14 +31,9 @@ int _printc(va_list arg)
 	char c = va_arg(arg, int);
 
 	if (c != 0)
-	{
 		_putchar (c);
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+
+	return (1);
 }
 
 /**
@@ -35,6 +47,9 @@ int _prints(va_list arg)
 
 	int index = 0;
 	char *s = va_arg(arg, char *);
+
+	if (s == NULL)
+		return (_printnull());
 
 	while (s[index] != '\0')
 	{

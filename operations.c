@@ -13,8 +13,15 @@ int _printc(va_list arg)
 {
 	char c = va_arg(arg, int);
 
-	_putchar (c);
-	return (1);
+	if (c != 0)
+	{
+		_putchar (c);
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }
 
 /**

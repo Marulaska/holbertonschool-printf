@@ -57,3 +57,17 @@ int _prints(va_list arg)
 	return (index);
 }
 
+
+
+/**
+ * _printi - print integer
+ * @arg: input string
+ * Return: len of the string.
+ */
+
+int _printi(va_list arg)
+{
+	int a = va_arg(arg, int);
+
+	return (printi_rec(a));
+}

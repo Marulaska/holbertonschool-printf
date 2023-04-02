@@ -14,6 +14,8 @@ int op_selec(char format, va_list arg)
 	op_f ops[] = {
 		{"c", _printc},
 		{"s", _prints},
+		{"i", _printi},
+		{"d", _printi},
 		{NULL, NULL}
 	};
 

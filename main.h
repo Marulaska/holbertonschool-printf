@@ -19,6 +19,9 @@ int _printf(const char *format, ...);
 int _putchar(char c);
 int _printc(va_list arg);
 int _prints(va_list arg);
+int _printi(va_list arg);
 int op_selec(char format, va_list arg);
+int printi_rec(int n);
+
 #endif
 

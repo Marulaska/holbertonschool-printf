@@ -34,6 +34,6 @@ int _prints(va_list arg)
 		_putchar(s[index]);
 		index++;
 	}
-	return (index + 1);
+	return (index);
 }
 

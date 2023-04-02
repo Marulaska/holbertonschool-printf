@@ -26,5 +26,7 @@ int op_selec(char format, va_list arg)
 			return (ops[j].f(arg));
 		j++;
 	}
-	return (0);
+	_putchar('%');
+	_putchar(format);
+	return (2);
 }

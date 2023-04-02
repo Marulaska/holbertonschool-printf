@@ -30,9 +30,7 @@ int _printc(va_list arg)
 {
 	char c = va_arg(arg, int);
 
-	if (c != 0)
-		_putchar (c);
-
+	_putchar (c);
 	return (1);
 }
 

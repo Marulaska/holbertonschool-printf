@@ -1,6 +1,6 @@
 # \_PRINTF
 ## Introducción
-`\_PRINTF` function formats and prints a series of characters and values to the standard output stream stdout.
+\_PRINTF function formats and prints a series of characters and values to the standard output stream stdout.
 
 ## This project
 This was an assignment in which Holberton School students were tasked into re-implementing the `printf` function with some limitations given by the school.
@@ -56,7 +56,7 @@ In addition to the data type, format specifiers can also include additional info
 
 ### Input:
 
-~~
+```
 int main ()
 {
     int age = 34;
@@ -66,12 +66,12 @@ int main ()
     \_printf("Name: %s, Gender: %c, Age: %d\n", *name, gender, age);
     return (0);
 }
-~~
+```
 ### Output:
 
-~~
+```
 Name: Mariana, Gender: F, Age: 34.
-~~
+```
 
 ## Resources
 

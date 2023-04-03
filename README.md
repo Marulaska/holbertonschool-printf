@@ -60,10 +60,10 @@ In addition to the data type, format specifiers can also include additional info
 int main ()
 {
     int age = 34;
-    char \*name = "Mariana";
+    char *name = "Mariana";
     char gender = "F";
 
-    \_printf("Name: %s, Gender: %c, Age: %d\n", *name, gender, age);
+    _printf("Name: %s, Gender: %c, Age: %d\n", *name, gender, age);
     return (0);
 }
 ```
